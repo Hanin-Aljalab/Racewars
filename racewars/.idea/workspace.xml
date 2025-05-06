@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5fe85d70-f804-4696-bcc7-1c560f8d1d16" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../.project" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Assignment_01/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../Assignment_01/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Assignment_02/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../Assignment_02/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Assignment_03/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../Assignment_03/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Assignment_04/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../Assignment_04/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Assignment_05/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../Assignment_05/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Assignment_06/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../Assignment_06/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Assignment_07/files/transform.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../Assignment_07/files/transform.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Assignment_07/files/wortliste.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../Assignment_07/files/wortliste.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Assignment_07/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../Assignment_07/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Assignment_08/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../Assignment_08/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Assignment_09/files/Faust_I.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../Assignment_09/files/Faust_I.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Assignment_09/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../Assignment_09/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../bin/submit.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../bin/submit.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../bin/update.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../bin/update.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../help/eclipse.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../help/eclipse.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../help/softwareausstattung.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../help/softwareausstattung.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../.project" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../.settings/org.eclipse.core.resources.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../checkstyle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../checkstyle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../pmd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../pmd.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../GreeterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../GreeterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../HelloWorldTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithmen/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithmen/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithmen/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithmen/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithmen/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithmen/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithmen/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithmen/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithmen/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithmen/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithmen/algorithmen.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithmen/algorithmen.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithmen/sort/SortPerformance.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithmen/sort/SortPerformance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithmen/sort/Sorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithmen/sort/Sorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithmen/sort/impl/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithmen/sort/impl/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithmen/sort/impl/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithmen/sort/impl/InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithmen/sort/impl/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithmen/sort/impl/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithmen/sort/impl/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithmen/sort/impl/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithmen/sort/impl/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithmen/sort/impl/SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithmen/test/SortPerformanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithmen/test/SortPerformanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../auffrischung/schnick/SchnickSchnackSchnuck.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../auffrischung/schnick/SchnickSchnackSchnuck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bootstrap/hello/Greeter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bootstrap/hello/Greeter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bootstrap/hello/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bootstrap/hello/HelloWorld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../collections/collections.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../collections/collections.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../collections/files/Faust_I.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../collections/files/Faust_I.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../collections/out/production/collections/pr2/collections/collections.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../collections/out/production/collections/pr2/collections/collections.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../collections/textanalyse/BuchstabenListe.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../collections/textanalyse/BuchstabenListe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../collections/textanalyse/TextAnalyse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../collections/textanalyse/TextAnalyse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../collections/textanalyse/TextAnalyseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../collections/textanalyse/TextAnalyseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../collections/textanalyse/TokenReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../collections/textanalyse/TokenReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../collections/textanalyse/WortListe.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../collections/textanalyse/WortListe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exceptions/fibonacci/FibBerechner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../exceptions/fibonacci/FibBerechner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exceptions/fibonacci/FibBerechnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../exceptions/fibonacci/FibBerechnerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exceptions/fibonacci/FibException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../exceptions/fibonacci/FibException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exceptions/fibonacci/impl/FibBerechnerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../exceptions/fibonacci/impl/FibBerechnerFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exceptions/fibonacci/impl/FibBerechnerIterativ.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../exceptions/fibonacci/impl/FibBerechnerIterativ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exceptions/fibonacci/impl/FibBerechnerRekursiv.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../exceptions/fibonacci/impl/FibBerechnerRekursiv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exceptions/fibonacci/impl/FibBerechnerTabelle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../exceptions/fibonacci/impl/FibBerechnerTabelle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exceptions/fibonacci/impl/FibNegativeNumberException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../exceptions/fibonacci/impl/FibNegativeNumberException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exceptions/fibonacci/impl/FibNotAFibonacciNumberException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../exceptions/fibonacci/impl/FibNotAFibonacciNumberException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exceptions/fibonacci/impl/FibNumberOutOfBoundsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../exceptions/fibonacci/impl/FibNumberOutOfBoundsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exceptions/fibonacci/test/Benchmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../exceptions/fibonacci/test/Benchmark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../io/cracker/Cracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../io/cracker/Cracker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../io/cracker/Crypter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../io/cracker/Crypter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../io/cracker/PasswordHasher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../io/cracker/PasswordHasher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../io/cracker/PasswordHasherBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../io/cracker/PasswordHasherBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../io/cracker/PasswordHasherMD5.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../io/cracker/PasswordHasherMD5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../io/cracker/PasswordHasherPBKDF2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../io/cracker/PasswordHasherPBKDF2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../io/cracker/files/logFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../io/cracker/files/logFile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../io/cracker/files/transformFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../io/cracker/files/transformFile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../io/cracker/files/wordFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../io/cracker/files/wordFile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../io/cracker/test/CrackerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../io/cracker/test/CrackerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../io/cracker/test/PasswordHasherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../io/cracker/test/PasswordHasherTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../io/io.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../io/io.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../io/out/production/io/pr2/io/io.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../io/out/production/io/pr2/io/io.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../strukturierung/vektor/Vektor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../strukturierung/vektor/Vektor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../strukturierung/vektor/test/VektorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../strukturierung/vektor/test/VektorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/racewars/Racewars.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/racewars/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/racewars/controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/racewars/controller/GameControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/racewars/controller/GameControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/racewars/controller/Squad.java" beforeDir="false" afterPath="$PROJECT_DIR$/racewars/controller/Squad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/racewars/controller/SquadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/racewars/controller/SquadTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/racewars/model/Anfuehrer.java" beforeDir="false" afterPath="$PROJECT_DIR$/racewars/model/Anfuehrer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/racewars/model/Element.java" beforeDir="false" afterPath="$PROJECT_DIR$/racewars/model/Element.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/racewars/model/Mensch.java" beforeDir="false" afterPath="$PROJECT_DIR$/racewars/model/Mensch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/racewars/model/Nachtelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/racewars/model/Nachtelf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/racewars/model/Ork.java" beforeDir="false" afterPath="$PROJECT_DIR$/racewars/model/Ork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/racewars/model/Rasse.java" beforeDir="false" afterPath="$PROJECT_DIR$/racewars/model/Rasse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/racewars/model/Untote.java" beforeDir="false" afterPath="$PROJECT_DIR$/racewars/model/Untote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/racewars/model/Wesen.java" beforeDir="false" afterPath="$PROJECT_DIR$/racewars/model/Wesen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/racewars/model/WesenFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/racewars/model/WesenFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/racewars/model/WesenFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/racewars/model/WesenFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/racewars/model/WesenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/racewars/model/WesenTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/racewars/viewer/GameViewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/racewars/viewer/GameViewer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/racewars/viewer/GameViewerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/racewars/viewer/GameViewerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../team-01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../team-01.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2wiqYLtEq4wB5f893wZmFda2dDp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.GameController.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.GameControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/haninaljalab/Downloads/team-01/sources/src/main/java/pr2/vererbung/racewars&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="GameController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pr2.vererbung.racewars.racewars.controller.GameController" />
+      <module name="racewars" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pr2.vererbung.racewars.racewars.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GameController" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5fe85d70-f804-4696-bcc7-1c560f8d1d16" name="Changes" comment="" />
+      <created>1746534788814</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746534788814</updated>
+      <workItem from="1746534789873" duration="1726000" />
+      <workItem from="1746536966286" duration="138000" />
+      <workItem from="1746537132209" duration="40000" />
+      <workItem from="1746537185373" duration="164000" />
+      <workItem from="1746537743977" duration="382000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
