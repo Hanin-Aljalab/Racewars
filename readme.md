@@ -4,10 +4,6 @@ Ihre überragende Fähigkeiten in der Programmierung macht in der Spielbranche d
 
 Da Sie selbst leidenschaftlicher Zocker sind, nehmen Sie diese Herausforderung natürlich sofort dankend an.
 
-## Paket
-
-Gehen Sie in das Paket [pr2.vererbung.racewars](../sources/src/main/java/pr2/vererbung/racewars).
-
 ## Rassen
 
 Bei dem Spiel geht es um den Kampf zwischen unterschiedlichen Wesen aus einer dunklen Fantasywelt. In dem Spiel gibt es vier verschiedene Rassen zur Auswahl.
