@@ -1,12 +1,12 @@
 package pr2.vererbung.racewars.racewars.model;
 
 /**
- * Klasse zur Repräsentation der Nachtelf-Rasse im Spiel.
+ * Class representing the Night Elf race in the game.
  */
 public class Nachtelf extends Rasse {
     /**
-     * Konstruktor für die Erstellung eines Nachtelf-Objekts.
-     * Initialisiert die Attribute der Nachtelf-Rasse.
+     * Constructor for creating a Night Elf object.
+     * Initializes the attributes specific to the Night Elf race.
      */
     public Nachtelf() {
         super("Nachtelf", 120, 15, 3, 0.2, 145);
