@@ -1,7 +1,6 @@
 package pr2.vererbung.racewars.racewars.controller;
 
 
-
 import java.util.ArrayList;
 
 import java.util.List;
@@ -9,271 +8,210 @@ import java.util.List;
 import java.util.Random;
 
 
-
 import pr2.vererbung.racewars.racewars.model.Wesen;
 
 
-
 /**
-
- * Die Klasse Squad repräsentiert eine Gruppe von Wesen für den Kampf im Spiel.
-
+ * The Squad class represents a group of creatures used for battle in the game.
  */
 
 public final class Squad {
 
 
-
-	/**
-
-	 * Maximal vorhandenes Geld für das Kaufen von Wesen für das Squad.
-
-	 */
-
-	public static final int MAX_INVEST = 2000;
-
-	
-
-	/** Der Name des Squads. */
-
-	public String squadName;
-
-	
-
-	/** Das restliche Geld des Squads. */
-
-	public int restMoney;
-
-	
-
-	 /** Das Array von Wesen im Squad. */
-
-	public Wesen[] wesenarray;
-
-
-
     /**
-
-     * Konstruktor für die Squad-Klasse.
-
+     * Maximum available funds for purchasing creatures for the squad.
      */
 
-	public Squad() {
-
-		this.squadName = squadName;
-
-		this.restMoney = restMoney;
-
-		this.wesenarray = new Wesen[50]; // Initialisiere das Array mit der maximalen Anzahl von Rassen
-
-	}
-
+    public static final int MAX_INVEST = 2000;
 
 
     /**
+     * The name of the squad.
+     */
+    public String squadName;
 
-     * Gibt den Namen des Squads zurück.
 
+    /**
+     * The remaining funds of the squad.
+     */
+    public int restMoney;
+
+
+    /**
+     * The array of creatures in the squad.
+     */
+    public Wesen[] wesenarray;
+
+
+    /**
+     * Constructor for the Squad class.
+     */
+
+    public Squad() {
+
+        this.squadName = squadName;
+
+        this.restMoney = restMoney;
+
+        this.wesenarray = new Wesen[50]; // Initialisiere das Array mit der maximalen Anzahl von Rassen
+
+    }
+
+
+    /**
+     * Returns the name of the squad.
      *
-
-     * @return Der Name des Squads.
-
+     * @return The name of the squad.
      */
 
-	public String getSquadName() {
+    public String getSquadName() {
 
-		return squadName;
+        return squadName;
 
-	}
-
+    }
 
 
     /**
-
-     * Setzt den Namen des Squads.
-
+     * Sets the name of the squad.
      *
-
-     * @param squadName Der neue Name des Squads.
-
+     * @param squadName The new name of the squad.
      */
 
-	public void setSquadName(String squadName) {
+    public void setSquadName(String squadName) {
 
-		this.squadName = squadName;
+        this.squadName = squadName;
 
-	}
-
+    }
 
 
     /**
-
-     * Gibt das restliche Geld des Squads zurück.
-
+     * Returns the remaining funds of the squad.
      *
-
-     * @return Das restliche Geld des Squads.
-
+     * @return The remaining funds.
      */
 
-	public int getRestMoney() {
+    public int getRestMoney() {
 
-		return restMoney;
+        return restMoney;
 
-	}
-
+    }
 
 
     /**
-
      * Setzt das restliche Geld des Squads.
-
      *
-
      * @param restMoney Das neue restliche Geld des Squads.
-
      */
 
-	public void setRestMoney(int restMoney) {
+    public void setRestMoney(int restMoney) {
 
-		this.restMoney = restMoney;
+        this.restMoney = restMoney;
 
-	}
-
+    }
 
 
     /**
-
-     * Gibt das Array von Wesen im Squad zurück.
-
+     * Returns the array of creatures in the squad.
      *
-
-     * @return Das Array von Wesen im Squad.
-
+     * @return The array of creatures.
      */
 
-	public Wesen[] getWesenarray() {
+    public Wesen[] getWesenarray() {
 
-		return wesenarray;
+        return wesenarray;
 
-	}
-
+    }
 
 
     /**
-
-     * Setzt das Array von Wesen im Squad.
-
+     * Sets the array of creatures in the squad.
      *
-
-     * @param wesenarray Das neue Array von Wesen im Squad.
-
+     * @param wesenarray The new array of creatures.
      */
 
-	public void setWesenarray(Wesen[] wesenarray) {
+    public void setWesenarray(Wesen[] wesenarray) {
 
-		this.wesenarray = wesenarray;
+        this.wesenarray = wesenarray;
 
-	}
+    }
+
 
     /**
-
-     * Entfernt ein totes Wesen aus dem Squad.
-
+     * Removes a dead creature from the squad.
      *
-
-     * @param squad Das Squad, aus dem das Wesen entfernt werden soll.
-
-     * @param index Der Index des zu entfernenden Wesens im Squad.
-
+     * @param squad The squad from which the creature should be removed.
+     * @param index The index of the creature to be removed.
      */
 
-	public void removeDeadCreature(Squad squad, int index) {
+    public void removeDeadCreature(Squad squad, int index) {
 
-		// Überprüfen, ob die Squad-Nummer größer als 0 ist
+        // Check if squad size is greater than 0
+        if (squad.getSquadNumber() > 0) {
 
-		if (squad.getSquadNumber() > 0) {
-
-			Wesen[] newwesenarray = new Wesen[squad.wesenarray.length - 1];
-
+            Wesen[] newwesenarray = new Wesen[squad.wesenarray.length - 1];
 
 
-			for (int i = 0, j = 0; i < squad.wesenarray.length; i++) {
+            for (int i = 0, j = 0; i < squad.wesenarray.length; i++) {
 
-				// Index vom Wesen, das stirbt, überspringen
+                // Skip the creature to be removed
+                if (i != index) {
 
-				if (i != index) {
+                    newwesenarray[j++] = squad.wesenarray[i];
 
-					newwesenarray[j++] = squad.wesenarray[i];
+                }
 
-				}
+            }
 
-			}
+            squad.wesenarray = newwesenarray;
 
-			squad.wesenarray = newwesenarray;
+        } else {
 
-		} else {
+            // Handle case when squad size is already 0 or less
+            // You may log a warning, throw an exception, etc.
 
-			// Behandlung für den Fall, dass die Squad-Nummer kleiner oder gleich 0 ist
+            System.out.println("Die Squad-Nummer ist bereits 0 oder kleiner.");
 
-			// Hier kannst du entscheiden, was in diesem Fall passieren soll
-
-			// Zum Beispiel eine Fehlermeldung ausgeben, einen Fehler werfen, etc.
-
-			System.out.println("Die Squad-Nummer ist bereits 0 oder kleiner.");
-
-		}
+        }
 
 
+    }
 
-	}
-
-	
 
     /**
-
-     * Gibt die Anzahl der Wesen im Squad zurück.
-
+     * Returns the number of creatures currently in the squad.
      *
-
-     * @return Die Anzahl der Wesen im Squad.
-
+     * @return The number of creatures.
      */
 
-	public int getSquadNumber() {
+    public int getSquadNumber() {
 
-		int counter = 0;
+        int counter = 0;
 
-		for (int i = 0; i < wesenarray.length; i++) {
+        for (int i = 0; i < wesenarray.length; i++) {
 
-			if (wesenarray[i] != null) {
+            if (wesenarray[i] != null) {
 
-				counter++;
+                counter++;
 
-			}
+            }
 
-		}
+        }
 
-		if (counter < 0) {
+        if (counter < 0) {
 
-			return 0;
+            return 0;
 
-		}
+        }
 
-		return counter;
+        return counter;
 
-	}
+    }
 
-	
 
     /**
-
-     * Überprüft, ob das Squad noch Mitglieder hat.
-
+     * Checks whether the squad is empty.
      *
-
-     * @return True, wenn das Squad keine Mitglieder hat, ansonsten False.
-
+     * @return True if the squad has no members, otherwise false.
      */
 
     public boolean squadIsEmpty() {
@@ -281,11 +219,6 @@ public final class Squad {
         return getSquadNumber() <= 0;
 
     }
-
-    
-
-    
-
 
 
 }
