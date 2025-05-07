@@ -1,44 +1,42 @@
 package pr2.vererbung.racewars.racewars.model;
 
 /**
- * Die Klasse Element repräsentiert die vier Elemente Feuer, Erde, Luft und Wasser.
+ * The Element class represents the four basic elements: Fire, Earth, Air, and Water.
  */
 public final class Element {
     /**
-     * Das Element Feuer.
+     * The Fire element.
      */
     public static final Element FEUER = new Element("Feuer");
     /**
-     * Das Element Erde.
+     * The Earth element.
      */
     public static final Element ERDE = new Element("Erde");
     /**
-     * Das Element Luft.
+     * The Air element.
      */
     public static final Element LUFT = new Element("Luft");
     /**
-     * Das Element Wasser.
+     * The Water element.
      */
     public static final Element WASSER = new Element("Wasser");
 
-    /**
-     * Der Name des Elements.
-     */
+    /** The name of the element. */
     private String name;
 
     /**
-     * Konstruktor für das Element.
+     * Constructor for creating an element.
      *
-     * @param name Der Name des Elements.
+     * @param name The name of the element.
      */
     private Element(String name) {
         this.name = name;
     }
 
     /**
-     * Gibt den Namen des Elements zurück.
+     * Returns the name of the element.
      *
-     * @return Der Name des Elements.
+     * @return The name.
      */
     public String getName() {
         return name;
