@@ -3,20 +3,19 @@ package pr2.vererbung.racewars.racewars.model;
 import pr2.vererbung.racewars.racewars.controller.Squad;
 
 /**
- * Klasse, um Wesen zu kaufen und zu erzeugen.
+ * Factory class for creating and purchasing creatures (Wesen).
  */
 public final class WesenFactory {
 
     /**
-     * Der Methode übergibt man die Information, wie viel Geld man investieren
-     * möchte und sie gibt ein Array von Wesen zurück. Das erste Element ist immer
-     * der Anführer, die folgenden dann entsprechend die Wesen der Art. Reicht das
-     * Geld nicht, wird ein leeres Array zurückgegeben. Die Art der erzeugten Wesen
-     * wählt man über einen passenden Parameter aus.
+     * This method takes the race and the budget to create an array of creatures.
+     * The first element is always the leader, followed by standard race creatures.
+     * If the budget is insufficient, an empty array is returned.
      *
-     * @param rasse Rasse von der man Wesen erzeugen möchte
-     * @param geld  Das Geld, das man investieren möchte.
-     * @return Array mit den Wesen, das erste Element ist immer der Anführer.
+     * @param rasse The race of the creatures to be created.
+     * @param budget The budget to be invested.
+     * @param playerSquad The player's squad to which creatures will be added.
+     * @return An array of creatures, with the first element being the leader.
      */
     public static Wesen[] create(Rasse rasse, int budget, Squad playerSquad) {
 
@@ -37,9 +36,9 @@ public final class WesenFactory {
             leaderPrice = leader.getPrice();
         }
 
-        // ANFÜHRER DER RASSE ERSTELLEN
+        // CREATE LEADER FOR THE RACE
 
-        // Überprüfen, um welche konkrete Rasse es sich handelt
+        // Check which specific race is used
         int lastIndex = getLastIndex(playerSquad.wesenarray);
         int restMoney = budget;
 
@@ -58,17 +57,17 @@ public final class WesenFactory {
             }
         }
 
-        // WEITERE WESEN DER RASSE ERSTELLEN
+        // CREATE ADDITIONAL CREATURES OF THE RACE
 
         if (restMoney < rasse.getPrice()) {
             return playerSquad.wesenarray;
         }
 
-        int amountRace = restMoney / rasse.getPrice(); // 700/150 = 4
-        restMoney = restMoney - (amountRace * rasse.getPrice()); // 700 - (4*150) = 100
+        int amountRace = restMoney / rasse.getPrice(); // e.g., 700/150 = 4
+        restMoney = restMoney - (amountRace * rasse.getPrice()); // e.g., 700 - (4*150) = 100
         playerSquad.setRestMoney(restMoney);
 
-        // Restliche Wesen kaufen
+        // Buy remaining creatures
         for (int i = lastIndex + 1; i <= lastIndex + amountRace; i++) {
 //				playerSquad.wesenarray[i] = new Ork();
             if (rasse instanceof Ork) {
@@ -87,19 +86,19 @@ public final class WesenFactory {
     }
 
     /**
-     * Ermittelt den Index des letzten nicht-null-Elements im Array.
+     * Determines the index of the last non-null element in the array.
      *
-     * @param playerSquadArray Das Array, in dem nach dem letzten Index gesucht werden soll.
-     * @return Der Index des letzten nicht-null-Elements.
+     * @param playerSquadArray The array to search.
+     * @return The index of the last non-null element.
      */
 
     public static int getLastIndex(Wesen[] playerSquadArray) {
-        int lastIndex = 0; // Initialisiere den Index
+        int lastIndex = 0; // Initialize the index
 
-        // Durchlaufe das Array, um den Index des letzten nicht-null-Elements zu finden
+        // Loop through the array to find the last non-null index
         for (int i = 0; i < playerSquadArray.length; i++) {
             if (playerSquadArray[i] == null) {
-                lastIndex = i; // Aktualisiere den Index des letzten nicht-null-Elements
+                lastIndex = i; // Update the last non-null index
                 return lastIndex;
             }
         }
