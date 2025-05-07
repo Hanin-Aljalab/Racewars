@@ -189,14 +189,6 @@ Nutzen Sie Vererbung und abstrakte Klassen, um keine Information und kein Verhal
 
 **Abgabe**: Das UML-Diagramm ist Teil der Abgabe und sollte an einer geeigneten Stelle in Ihrem Repository eingecheckt sein. Als **Dateiformat** ist `PNG` oder `PDF` erlaubt.
 
-
-## Implementierung
-
-Gehen Sie in das Paket [pr2.vererbung.racewars](../sources/src/main/java/pr2/vererbung/racewars/).
-
-Implementieren Sie alle Klassen aus Ihrem UML-Diagramm mit dem entsprechenden Verhalten.
-
-
 ## JUnit
 
 Schreiben Sie sinnvolle JUnit Tests zur Überprüfung der Factories, der Kampf-Funktion und der Erstellung verschiedener Squads.
