@@ -1,48 +1,48 @@
 package pr2.vererbung.racewars.racewars.model;
 
 /**
- * Klasse, um die Rasse eines Wesens anzugeben. Die Klasse enthält vier
- * statische Referenzen, welche die vier Rassen des Spiels repräsentieren.
- * Außerdem speichert sie noch die Kosten pro Rasse.
+ * Class representing the race of a creature.
+ * This class defines four static references representing the races in the game
+ * and stores race-specific attributes including cost.
  */
 
 public class Rasse extends Wesen {
 
     /**
-     * Die Rasse Ork.
+     * The Orc race.
      */
     public static final Rasse ORK = new Ork();
     /**
-     * Die Rasse Mensch.
+     * The Human race.
      */
     public static final Rasse MENSCH = new Mensch();
     /**
-     * Die Rasse Nachtelf.
+     * The Night Elf race.
      */
     public static final Rasse NACHTELF = new Nachtelf();
     /**
-     * Die Rasse Untote.
+     * The Undead race.
      */
     public static final Rasse UNTOTE = new Untote();
 
     /**
-     * Konstruktor für die Rasse.
+     * Constructor for creating a race with specific attributes.
      *
-     * @param name         Der Name der Rasse.
-     * @param healthPoints Die Lebenspunkte der Rasse.
-     * @param schaden      Der Schaden der Rasse.
-     * @param speed        Die Geschwindigkeit der Rasse.
-     * @param armor        Die Rüstung der Rasse.
-     * @param price        Der Preis der Rasse.
+     * @param name         The name of the race.
+     * @param healthPoints The health points of the race.
+     * @param schaden      The damage dealt by the race.
+     * @param speed        The speed of the race.
+     * @param armor        The armor protection of the race.
+     * @param price        The cost of the race.
      */
     public Rasse(String name, double healthPoints, double schaden, int speed, double armor, int price) {
         super(name, healthPoints, schaden, speed, armor, price);
     }
 
     /**
-     * Gibt den Namen der Rasse zurück.
+     * Returns the name of the race.
      *
-     * @return Der Name der Rasse.
+     * @return The race name.
      */
     @Override
     public String toString() {
@@ -50,11 +50,11 @@ public class Rasse extends Wesen {
     }
 
     /**
-     * Berechnet den Schaden, den die Rasse einem Gegner zufügt,
-     * und aktualisiert gleichzeitig die Lebenspunkte des Gegners.
+     * Calculates and applies damage from this race to an opponent,
+     * reducing the opponent's health based on armor resistance.
      *
-     * @param gegner Das gegnerische Wesen.
-     * @return Der angerichtete Schaden.
+     * @param gegner The opponent creature.
+     * @return The damage dealt.
      */
     @Override
     public double attacke(Wesen gegner) {
@@ -64,7 +64,7 @@ public class Rasse extends Wesen {
             damage = beschraenkeSchaden(this.schaden);
         }
 
-        // Der angerichtete Schaden wird prozentual der angegebenen Rüstung reduziert
+        // The damage is reduced by the opponent's armor percentage
         damage = damage * (1 - gegner.getArmor());
 
         gegner.setHealthPoints(gegner.getHealthPoints() - damage);
