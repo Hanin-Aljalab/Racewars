@@ -557,16 +557,3 @@ Squad von: Legolas and friends
 ---------SPIEL BEENDET-------
 Sieger: Legolas and friends
 ```
-
-
-## Abgabe
-
-Alle Abgaben für die Vorlesung erfolgen über `git`.
-
-Hierzu gehen Sie wie folgt vor:
-
-  1. Öffnen Sie eine Kommandozeile (Terminal).
-  2. Gehen Sie in Ihr Working Directory.
-  3. Rufen Sie mit `bin/submit.sh` das Skript auf, das die Lösungen testet und kompiliert. Wenn Maven eine Fehlermeldung zeigt, beheben Sie diese zuerst, bevor Sie mit dem nächsten Schritt fortfahren.
-  4. Wenn Sie Meldung "✅ Projekt gebaut" bekommen, checken Sie Ihre Änderungen in `git` **auf der Kommandozeile** ein (comitten), d.h. mit `git add` und `git commit`. Verwenden Sie **nicht** Eclipse für diesen Schritt.
-  5. Rufen Sie mit `bin/submit.sh` erneut das Skript auf. Wenn alles klappt, bekommen Sie die Anzeige "✅ Aktuelle Lösungen eingereicht" und Ihre Lösung ist im System angekommen.
