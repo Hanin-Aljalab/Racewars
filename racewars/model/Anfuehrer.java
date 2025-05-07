@@ -1,22 +1,21 @@
 package pr2.vererbung.racewars.racewars.model;
 
 /**
- * Klasse, um Anführer zu repräsentieren, die von einer bestimmten Rasse
- * abstammen.
+ * Class representing a leader who originates from a specific race.
  */
 public class Anfuehrer extends Wesen {
-	private String name; // Der Name des Anführers
+	private String name; // The name of the leader
 
-	private Element dominantesElement; // Das dominante Element des Anführers
-	private double bonusFaktor; // Der Bonusfaktor für die Lebenspunkte
+	private Element dominantesElement; // The dominant element of the leader
+	private double bonusFaktor; // Bonus factor for health points
 
     /**
-     * Konstruktor für die Erstellung eines Anführers.
+     * Constructor for creating a leader.
      *
-     * @param leaderName    Der Name des Anführers.
-     * @param rasse         Die Rasse, der der Anführer angehört.
-     * @param element       Das dominante Element des Anführers.
-     * @param bonusFaktor   Der Bonusfaktor für die Lebenspunkte.
+     * @param leaderName  The name of the leader.
+     * @param rasse       The race the leader belongs to.
+     * @param element     The dominant element of the leader.
+     * @param bonusFaktor The bonus factor for health points.
      */
 
 	public Anfuehrer(String leaderName, Rasse rasse, Element element, double bonusFaktor) {
@@ -27,34 +26,34 @@ public class Anfuehrer extends Wesen {
 	}
 
     /**
-     * Getter für das dominante Element des Anführers.
+     * Returns the dominant element of the leader.
      *
-     * @return Das dominante Element des Anführers.
+     * @return The dominant element.
      */
 	public Element getDominantesElement() {
 		return dominantesElement;
 	}
     /**
-     * Setter für das dominante Element des Anführers.
+     * Sets the dominant element of the leader.
      *
-     * @param dominantesElement Das dominante Element des Anführers.
+     * @param dominantesElement The new dominant element.
      */
 	public void setDominantesElement(Element dominantesElement) {
 		this.dominantesElement = dominantesElement;
 	}
 
     /**
-     * Getter für den Bonusfaktor des Anführers.
+     * Returns the bonus factor of the leader.
      *
-     * @return Der Bonusfaktor des Anführers.
+     * @return The bonus factor.
      */
 	public double getBonusFaktor() {
 		return bonusFaktor;
 	}
     /**
-     * Setter für den Bonusfaktor des Anführers.
+     * Sets the bonus factor of the leader.
      *
-     * @param bonusFaktor Der Bonusfaktor des Anführers.
+     * @param bonusFaktor The new bonus factor.
      */
 	public void setBonusFaktor(double bonusFaktor) {
 		this.bonusFaktor = bonusFaktor;
@@ -66,11 +65,10 @@ public class Anfuehrer extends Wesen {
 	}
 
 	/**
-	 * Überprüft, ob das Element des Anführers dominant gegenüber dem übergebenen
-	 * Element ist.
+	 * Checks whether the leader's element is superior to the given element.
 	 *
-	 * @param element Element, das überprüft werden soll
-	 * @return true, wenn das Element dominant ist, ansonsten false
+	 * @param element The element to compare with.
+	 * @return true if superior, otherwise false.
 	 */
 	public boolean elementIsSuperior(Element element) {
 		if (this.dominantesElement == Element.FEUER && element == Element.LUFT) {
@@ -86,26 +84,25 @@ public class Anfuehrer extends Wesen {
 		}
 
 	}
-	
+
 
 	@Override
 	public double attacke(Wesen gegner) {
 		double damage;
 		damage = this.speed * this.schaden;
 
-        // Überprüfen, ob der Gegner ein Mensch ist
+        // Check if the opponent is a human
 		if (gegner == Rasse.MENSCH) {
 			damage = beschraenkeSchaden(this.schaden);
 		}
-        // Überprüfen, ob der Gegner ein Anführer ist und ob das Element des Gegners
-        // dem dominanten Element des Anführers überlegen ist
+        // Check if the opponent is a leader and if their element is inferior
 		if (gegner instanceof Anfuehrer) {
 			Anfuehrer anfuehrer = (Anfuehrer) gegner;
 			if (elementIsSuperior(anfuehrer.getDominantesElement())) {
 				damage = damage * 2;
 			}
 		}
-		// Der angerichtete Schaden wird prozentual der angegebenen Rüstung reduziert
+		// Reduce damage based on opponent's armor
 		damage = damage * (1 - gegner.getArmor());
 
 		gegner.setHealthPoints(gegner.getHealthPoints() - damage);
