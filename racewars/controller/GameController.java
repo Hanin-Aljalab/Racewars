@@ -24,16 +24,17 @@ import pr2.vererbung.racewars.racewars.viewer.GameViewer;
 
 
 /**
- * Die Klasse GameController verwaltet das Spiel Racewars und steuert den Ablauf
- * des Spiels sowie die Interaktion mit den Spielern.
+ * The GameController class manages the Racewars game and controls
+ * the game flow and interaction with the players.
  */
 
 public final class GameController {
 
 
     /**
-     * Einstiegspunkt in das Programm.
-     * @param args Kommandozeilenargumente.
+     * Entry point of the program.
+     *
+     * @param args Command-line arguments.
      */
 
     public static void main(String[] args) {
@@ -61,12 +62,10 @@ public final class GameController {
 
 
     /**
-     * Vorbereitung vor dem Spiel, einschließlich Eingabe von Spielerinformationen
-     * <p>
-     * und Rassenauswahl.
+     * Prepares the game by collecting player input and race selection.
      *
-     * @param teamNumber Die Nummer des Teams (1 oder 2).
-     * @param team       Das Squad des Spielers.
+     * @param teamNumber The number of the team (1 or 2).
+     * @param team       The player's squad.
      */
 
     public void playerInput(int teamNumber, Squad team) {
@@ -93,7 +92,7 @@ public final class GameController {
 
         System.out.println();
 
-
+        // First race selection
         do {
 
             System.out.print("SPIELER " + teamNumber
@@ -118,7 +117,7 @@ public final class GameController {
 
         System.out.println();
 
-
+        // Investment for first race
         do {
 
             System.out.print("SPIELER " + teamNumber + ": Wie viel Geld möchten Sie in diese Rasse investieren? : ");
@@ -155,7 +154,7 @@ public final class GameController {
 
         System.out.println();
 
-
+        // Second race selection
         do {
 
             System.out.print("SPIELER " + teamNumber
@@ -180,7 +179,7 @@ public final class GameController {
 
         System.out.println();
 
-
+        // Investment for second race
         do {
 
             System.out.print("SPIELER " + teamNumber + ": Wie viel Geld möchten Sie in diese Rasse investieren? : ");
@@ -214,13 +213,11 @@ public final class GameController {
 
 
     /**
-     * Gibt eine Rasse entsprechend dem übergebenen Namen zurück.
+     * Returns a race instance based on the provided name.
      *
-     * @param race Der Name der Rasse.
-     * @return Die entsprechende Rasse-Instanz.
+     * @param race The name of the race.
+     * @return The corresponding race instance.
      */
-
-
     private Rasse getRasseByName(String race) {
 
         if (race.equals("Mensch")) {
@@ -253,10 +250,10 @@ public final class GameController {
 
 
     /**
-     * Wählt zufällig ein Wesen aus dem gegnerischen Squad aus.
+     * Randomly selects a creature from the opposing squad.
      *
-     * @param team Das gegnerische Squad.
-     * @return Ein Array, das das ausgewählte Wesen und seinen Index enthält.
+     * @param team The opposing squad.
+     * @return An array containing the selected creature and its index.
      */
 
 
@@ -289,13 +286,11 @@ public final class GameController {
 
 
     /**
-     * Überprüft, welches Team gewonnen hat.
+     * Checks which team has won.
      *
-     * @param teamOne Das erste Team.
-     * @param teamTwo Das zweite Team.
-     * @return Die Nummer des Gewinnerteams (1 für Team 1, 2 für Team 2, 0 für
-     * <p>
-     * Unentschieden).
+     * @param teamOne The first team.
+     * @param teamTwo The second team.
+     * @return The winning team number (1 for team 1, 2 for team 2, 0 for draw).
      */
 
 
@@ -319,10 +314,10 @@ public final class GameController {
 
 
     /**
-     * Spielt das Spiel bis zum Ende.
+     * Runs the game until one team is eliminated.
      *
-     * @param teamOne Das erste Team.
-     * @param teamTwo Das zweite Team.
+     * @param teamOne The first team.
+     * @param teamTwo The second team.
      */
 
     public void runGame(Squad teamOne, Squad teamTwo) {
@@ -380,13 +375,11 @@ public final class GameController {
 
 
     /**
-     * Führt eine Runde des Spiels durch, in der jedes Wesen des ersten Teams gegen
-     * <p>
-     * ein zufällig ausgewähltes Wesen des zweiten Teams kämpft.
-     *
-     * @param teamOne     Das erste Team.
-     * @param teamTwo     Das zweite Team.
-     * @param roundNumber Die Nummer der aktuellen Runde.
+     * Executes one round of the game where each creature in teamOne fights
+     * a randomly selected creature from teamTwo.
+     * @param teamOne     The first team.
+     * @param teamTwo     The second team.
+     * @param roundNumber The round number.
      */
 
 
