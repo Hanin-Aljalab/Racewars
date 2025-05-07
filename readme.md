@@ -1,9 +1,5 @@
 # Racewars
 
-**🎓 Benotetes Assignment 🎓**
-
-📆 **Fällig: 27.04.2025** 📆 [Musterlösung](solution/)
-
 Ihre überragende Fähigkeiten in der Programmierung macht in der Spielbranche die Runde, weshalb Sie nun ein Angebot des Spielgiganten Blizzard auf Ihrem Schreibtisch liegen haben, ein neues rundenbasiertes Rollenspiel zu entwerfen.
 
 Da Sie selbst leidenschaftlicher Zocker sind, nehmen Sie diese Herausforderung natürlich sofort dankend an.
