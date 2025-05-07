@@ -3,46 +3,45 @@ package pr2.vererbung.racewars.racewars.viewer;
 import pr2.vererbung.racewars.racewars.controller.Squad;
 
 /**
- * Die Klasse GameViewer dient zum Anzeigen des aktuellen Spielzustands und des Gewinners des Spiels.
+ * The GameViewer class is responsible for displaying the current game state and the winner.
  */
 public final class GameViewer {
 
     /**
-     * Gib den aktuellen Stand des Spieles aus. Hierzu greift die
-     * Methode auf die Methoden des Gamecontrollers zurück.
+     * Displays the current state of the game by printing the squad's name, size, and member names.
      *
-     * @param game das Spiel
+     * @param team the squad whose state is to be displayed
      */
-    
+
     public static void printGame(Squad team) {
-    	System.out.println("Squad von: " + team.getSquadName());
+        System.out.println("Squad von: " + team.getSquadName());
 
-		System.out.println("Squadgröße: " + team.getSquadNumber());
+        System.out.println("Squadgröße: " + team.getSquadNumber());
 
-		for (int i = 0; i < team.wesenarray.length; i++) {
-			if (team.wesenarray[i] != null) {
-				System.out.println(team.wesenarray[i].getName());
-			}
-		}
+        for (int i = 0; i < team.wesenarray.length; i++) {
+            if (team.wesenarray[i] != null) {
+                System.out.println(team.wesenarray[i].getName());
+            }
+        }
     }
-    /**
-     * Gibt den Gewinner des Spiels aus oder zeigt an, dass das Spiel unentschieden ist.
-     *
-     * @param winnerNumber Die Nummer des Gewinnerteams (1 für Team 1, 2 für Team 2).
-     * @param teamOne Das erste Team.
-     * @param teamTwo Das zweite Team.
-     */
-    
-    public static void printWinner(int winnerNumber, Squad teamOne, Squad teamTwo) {
-    	if (winnerNumber == 1) {
-			System.out.println("SIEGER: " + teamOne.getSquadName());
-		} else if (winnerNumber == 2) {
-			System.out.println("SIEGER: " + teamTwo.getSquadName());
-		} else {
-			System.out.println("UNENTSCHIEDEN!");
-		}
-	}
 
-    
+    /**
+     * Prints the winner of the game or declares a draw if there is no winner.
+     *
+     * @param winnerNumber the number of the winning team (1 for team one, 2 for team two)
+     * @param teamOne      the first team
+     * @param teamTwo      the second team
+     */
+
+    public static void printWinner(int winnerNumber, Squad teamOne, Squad teamTwo) {
+        if (winnerNumber == 1) {
+            System.out.println("SIEGER: " + teamOne.getSquadName());
+        } else if (winnerNumber == 2) {
+            System.out.println("SIEGER: " + teamTwo.getSquadName());
+        } else {
+            System.out.println("UNENTSCHIEDEN!");
+        }
+    }
+
 
 }
