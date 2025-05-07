@@ -2,45 +2,45 @@ package pr2.vererbung.racewars.racewars.model;
 
 
 /**
- * Basisklasse für alle Wesen im Spiel.
+ * Base class for all creatures in the game.
  */
 public abstract class Wesen {
 
 
     /**
-     * Der Name des Wesens.
+     * The name of the creature.
      */
     protected String name;
     /**
-     * Die Lebenspunkte des Wesens.
+     * The health points of the creature.
      */
     protected double healthPoints;
     /**
-     * Der Schaden, den das Wesen austeilen kann.
+     * The damage the creature can deal.
      */
     protected double schaden;
     /**
-     * Die Geschwindigkeit des Wesens.
+     * The speed of the creature.
      */
     protected int speed;
     /**
-     * Die Rüstung des Wesens.
+     * The armor of the creature.
      */
     protected double armor;
     /**
-     * Der Preis des Wesens.
+     * The cost of the creature.
      */
     protected int price;
 
     /**
-     * Konstruktor für das Wesen.
+     * Constructor for the creature.
      *
-     * @param name         Der Name des Wesens.
-     * @param healthPoints Die Lebenspunkte des Wesens.
-     * @param schaden      Der Schaden, den das Wesen austeilen kann.
-     * @param speed        Die Geschwindigkeit des Wesens.
-     * @param armor        Die Rüstung des Wesens.
-     * @param price        Der Preis des Wesens.
+     * @param name         The name of the creature.
+     * @param healthPoints The health points of the creature.
+     * @param schaden      The damage the creature can deal.
+     * @param speed        The speed of the creature.
+     * @param armor        The armor of the creature.
+     * @param price        The cost of the creature.
      */
     public Wesen(String name, double healthPoints, double schaden, int speed, double armor, int price) {
         this.name = name;
@@ -52,108 +52,108 @@ public abstract class Wesen {
     }
 
     /**
-     * Gibt den Namen des Wesens zurück.
+     * Returns the name of the creature.
      *
-     * @return Der Name des Wesens.
+     * @return The name of the creature.
      */
     public String getName() {
         return name;
     }
 
     /**
-     * Setzt den Namen des Wesens.
+     * Sets the name of the creature.
      *
-     * @param name Der neue Name des Wesens.
+     * @param name The new name of the creature.
      */
     public void setName(String name) {
         this.name = name;
     }
 
     /**
-     * Gibt die Lebenspunkte des Wesens zurück.
+     * Returns the creature's health points.
      *
-     * @return Die Lebenspunkte des Wesens.
+     * @return The health points of the creature.
      */
     public double getHealthPoints() {
         return healthPoints;
     }
 
     /**
-     * Setzt die Lebenspunkte des Wesens.
+     * Sets the creature's health points.
      *
-     * @param healthPoints Die neuen Lebenspunkte des Wesens.
+     * @param healthPoints The new health points of the creature.
      */
     public void setHealthPoints(double healthPoints) {
         this.healthPoints = healthPoints;
     }
 
     /**
-     * Gibt den Schaden des Wesens zurück.
+     * Returns the creature's damage value.
      *
-     * @return Der Schaden des Wesens.
+     * @return The damage of the creature.
      */
     public double getSchaden() {
         return schaden;
     }
 
     /**
-     * Setzt den Schaden des Wesens.
+     * Sets the creature's damage value.
      *
-     * @param schaden Der neue Schaden des Wesens.
+     * @param schaden The new damage of the creature.
      */
     public void setSchaden(double schaden) {
         this.schaden = schaden;
     }
 
     /**
-     * Gibt die Geschwindigkeit des Wesens zurück.
+     * Returns the creature's speed.
      *
-     * @return Die Geschwindigkeit des Wesens.
+     * @return The speed of the creature.
      */
     public int getSpeed() {
         return speed;
     }
 
     /**
-     * Setzt die Geschwindigkeit des Wesens.
+     * Sets the creature's speed.
      *
-     * @param speed Die neue Geschwindigkeit des Wesens.
+     * @param speed The new speed of the creature.
      */
     public void setSpeed(int speed) {
         this.speed = speed;
     }
 
     /**
-     * Gibt die Rüstung des Wesens zurück.
+     * Returns the creature's armor.
      *
-     * @return Die Rüstung des Wesens.
+     * @return The armor of the creature.
      */
     public double getArmor() {
         return armor;
     }
 
     /**
-     * Setzt die Rüstung des Wesens.
+     * Sets the creature's armor.
      *
-     * @param armor Die neue Rüstung des Wesens.
+     * @param armor The new armor of the creature.
      */
     public void setArmor(double armor) {
         this.armor = armor;
     }
 
     /**
-     * Gibt den Preis des Wesens zurück.
+     * Returns the creature's cost.
      *
-     * @return Der Preis des Wesens.
+     * @return The cost of the creature.
      */
     public int getPrice() {
         return price;
     }
 
     /**
-     * Setzt den Preis des Wesens.
+     * Sets the creature's cost.
      *
-     * @param price Der neue Preis des Wesens.
+     * @param price The new cost of the creature.
      */
     public void setPrice(int price) {
         this.price = price;
@@ -166,19 +166,18 @@ public abstract class Wesen {
 
 
     /**
-     * Greife das andere Wesen an. Der Schaden wird berechnet und beim
-     * gegnerischen Wesen abgezogen.
+     * Attack the opponent creature. Calculates and applies damage.
      *
-     * @param gegner Wesen, das angegriffen werden soll.
-     * @return Zugefügter Schaden.
+     * @param gegner Creature to be attacked.
+     * @return Damage dealt.
      */
     public abstract double attacke(Wesen gegner);
 
     /**
-     * Beschränkt den Schaden.
+     * Restricts the damage based on certain criteria.
      *
-     * @param dmg Schaden.
-     * @return Vebleibender Schaden nach der Beschränkung.
+     * @param damage Raw damage.
+     * @return Remaining damage after applying restrictions.
      */
     public double beschraenkeSchaden(double damage) {
         damage = speed * this.schaden;
@@ -192,9 +191,9 @@ public abstract class Wesen {
     }
 
     /**
-     * Gibt an, ob das Wesen noch lebt (Lebenspunkte > 0).
+     * Indicates whether the creature is still alive (health > 0).
      *
-     * @return true, wenn das Wesen noch lebt, ansonsten false
+     * @return true if the creature is alive, otherwise false
      */
     public boolean isLebendig() {
         return getHealthPoints() >= 0;
